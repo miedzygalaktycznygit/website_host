@@ -1,0 +1,132 @@
+@charset "UTF-8";
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+main {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  background-color: rgb(38, 132, 219);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .section1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  width: 98.9vw;
+  background-color: rgb(216, 75, 75);
+}
+main .section1 .logo {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 10rem;
+  width: 98.9vw;
+  border-top: 4px dotted rgb(0, 0, 0); /* Góra */
+  border-bottom: 4px dotted rgb(0, 0, 0); /* Dół */
+}
+main .section1 .section1_content {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 25rem;
+  width: 98.9vw;
+  border-top: 4px dotted rgb(0, 0, 0); /* Góra */
+  border-bottom: 4px dotted rgb(0, 0, 0); /* Dół */
+  -moz-column-gap: 7.5rem;
+       column-gap: 7.5rem;
+}
+main .section1 .section1_content .img1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 25rem;
+  width: 25rem;
+  border-right: 4px dotted rgb(0, 0, 0); /* Góra */
+  border-left: 4px dotted rgb(0, 0, 0);
+  background-color: aqua;
+}
+main .section1 .section1_content .group_chat {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 25rem;
+  width: 30rem;
+  border-right: 4px dotted rgb(0, 0, 0); /* Góra */
+  border-left: 4px dotted rgb(0, 0, 0);
+  background-color: black;
+}
+main .section1 .section1_content .img2 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 25rem;
+  width: 25rem;
+  border-left: 4px dotted rgb(0, 0, 0);
+  border-left: 4px dotted rgb(0, 0, 0);
+  background-color: purple;
+}
+main .section1 .pointer1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 15rem;
+  width: 98.9vw;
+  border-top: 4px dotted rgb(0, 0, 0); /* Góra */
+  border-bottom: 4px dotted rgb(0, 0, 0); /* Dół */
+}
+main .section2 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  width: 98.9vw;
+  background-color: beige;
+}
+main .footer1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 25vh;
+  width: 98.9vw;
+  background-color: black;
+}/*# sourceMappingURL=style.css.map */

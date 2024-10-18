@@ -1,0 +1,91 @@
+@mixin fFlexbox($direction, $height, $width){
+    display: flex;
+    flex-direction: $direction;
+    text-align: center;
+    justify-content: center;
+    height: $height;
+    width: $width;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: white;
+    min-width: fit-content;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  main {
+    height: fit-content; 
+    width: 100%;
+    background-color: rgb(38, 132, 219);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .section1{
+        @include fFlexbox(column, 100vh, 98.9vw);
+        background-color: rgb(216, 75, 75);
+
+        .logo{
+            @include fFlexbox(row, 10rem, 98.9vw);
+            border-top: 4px dotted rgb(0, 0, 0);   /* Góra */
+            border-bottom: 4px dotted rgb(0, 0, 0); /* Dół */
+        }
+        .section1_content{
+            @include fFlexbox(row, 25rem, 98.9vw);
+            border-top: 4px dotted rgb(0, 0, 0);   /* Góra */
+            border-bottom: 4px dotted rgb(0, 0, 0); /* Dół */
+            column-gap: 7.5rem;
+
+            .img1{
+                @include fFlexbox(row, 25rem, 25rem);
+                border-right: 4px dotted rgb(0, 0, 0);   /* Góra */
+                border-left: 4px dotted rgb(0, 0, 0);
+                background-color: aqua;
+            }
+            .group_chat{
+                @include fFlexbox(column, 25rem, 30rem);
+                border-right: 4px dotted rgb(0, 0, 0);   /* Góra */
+                border-left: 4px dotted rgb(0, 0, 0);
+                background-color: black;
+            }
+            .img2{
+                @include fFlexbox(row, 25rem, 25rem);
+                border-left: 4px dotted rgb(0, 0, 0);
+                border-left: 4px dotted rgb(0, 0, 0);
+                background-color: purple;
+            }
+        }
+        .pointer1{
+            @include fFlexbox(row, 15rem, 98.9vw);
+            border-top: 4px dotted rgb(0, 0, 0);   /* Góra */
+            border-bottom: 4px dotted rgb(0, 0, 0); /* Dół */
+        }
+    }
+    .section2{
+        @include fFlexbox(row, 100vh, 98.9vw);
+        background-color: beige;
+    }
+    .footer1{
+        @include fFlexbox(row, 25vh, 98.9vw);
+        background-color: black;
+    }
+  }
