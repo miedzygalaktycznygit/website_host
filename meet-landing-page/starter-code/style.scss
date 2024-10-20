@@ -18,7 +18,8 @@
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     background-color: white;
-    min-width: fit-content;
+    width: fit-content;
+    height: fit-content;
   }
   img, picture, video, canvas, svg {
     display: block;
@@ -41,51 +42,61 @@
     align-items: center;
 
     .section1{
-        @include fFlexbox(column, 100vh, 98.9vw);
+        @include fFlexbox(column, 100vh, 118.9rem);
         background-color: rgb(216, 75, 75);
 
         .logo{
-            @include fFlexbox(row, 10rem, 98.9vw);
+            @include fFlexbox(row, 15rem, 118.9rem);
             border-top: 4px dotted rgb(0, 0, 0);   /* Góra */
             border-bottom: 4px dotted rgb(0, 0, 0); /* Dół */
         }
         .section1_content{
-            @include fFlexbox(row, 25rem, 98.9vw);
+            @include fFlexbox(row, 26rem, 118.9rem);
             border-top: 4px dotted rgb(0, 0, 0);   /* Góra */
             border-bottom: 4px dotted rgb(0, 0, 0); /* Dół */
-            column-gap: 7.5rem;
+            
+            .pictures{
+              @include fFlexbox(row, 26rem, 118.9rem);
+              column-gap: 43rem;
+              .img1{
+                  @include fFlexbox(row, 26rem, 36rem);
+                  border-right: 4px dotted rgb(0, 0, 0);   /* Góra */
+                  border-left: 4px dotted rgb(0, 0, 0);
+                  background-color: aqua;
+              }
 
-            .img1{
-                @include fFlexbox(row, 25rem, 25rem);
-                border-right: 4px dotted rgb(0, 0, 0);   /* Góra */
-                border-left: 4px dotted rgb(0, 0, 0);
-                background-color: aqua;
+              .img2{
+                  @include fFlexbox(row, 26rem, 36rem);
+                  border-left: 4px dotted rgb(0, 0, 0);
+                  border-left: 4px dotted rgb(0, 0, 0);
+                  background-color: purple;
+              }
             }
             .group_chat{
-                @include fFlexbox(column, 25rem, 30rem);
-                border-right: 4px dotted rgb(0, 0, 0);   /* Góra */
-                border-left: 4px dotted rgb(0, 0, 0);
-                background-color: black;
-            }
-            .img2{
-                @include fFlexbox(row, 25rem, 25rem);
-                border-left: 4px dotted rgb(0, 0, 0);
-                border-left: 4px dotted rgb(0, 0, 0);
-                background-color: purple;
-            }
+              @include fFlexbox(column, 26rem, 39rem);
+              border-right: 4px dotted rgb(0, 0, 0);   /* Góra */
+              border-left: 4px dotted rgb(0, 0, 0);
+              background-color: black;
+              position: absolute;
+          }
         }
         .pointer1{
-            @include fFlexbox(row, 15rem, 98.9vw);
+            @include fFlexbox(row, 18rem, 118.9rem);
             border-top: 4px dotted rgb(0, 0, 0);   /* Góra */
             border-bottom: 4px dotted rgb(0, 0, 0); /* Dół */
         }
     }
     .section2{
-        @include fFlexbox(row, 100vh, 98.9vw);
+        @include fFlexbox(row, 100vh, 100%);
         background-color: beige;
     }
     .footer1{
-        @include fFlexbox(row, 25vh, 98.9vw);
+        @include fFlexbox(row, 25vh, 100%);
         background-color: black;
     }
   }
+
+
+  @media (max-width: 768px) {
+
+}
