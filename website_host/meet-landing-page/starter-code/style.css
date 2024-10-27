@@ -1,0 +1,278 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+main {
+  height: 137rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .section1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 63.5rem;
+  width: 100%;
+}
+main .section1 .logo {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 25%;
+  width: 100%;
+}
+main .section1 .logo .logo_holder {
+  margin-top: 5rem;
+}
+main .section1 .section1_content {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 40%;
+  width: 100%;
+}
+main .section1 .section1_content .pictures {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  -moz-column-gap: 40vw;
+       column-gap: 40vw;
+}
+main .section1 .section1_content .pictures .img1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 25rem;
+  width: 30rem;
+}
+main .section1 .section1_content .pictures .img2 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 25rem;
+  width: 30rem;
+  margin-top: 5rem;
+}
+main .section1 .section1_content .group_chat {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 30rem;
+  width: 39rem;
+  position: absolute;
+}
+main .section1 .section1_content .group_chat .main_text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 70%;
+  width: 100%;
+}
+main .section1 .section1_content .group_chat .main_text h1 {
+  font-size: 4.5rem;
+  margin-top: -1rem;
+  padding-inline: 6rem;
+  line-height: 4rem;
+}
+main .section1 .section1_content .group_chat .main_text p {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  padding-inline: 3.5rem;
+}
+main .section1 .section1_content .group_chat .buttons {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 30%;
+  width: 100%;
+  gap: 2rem;
+}
+main .section1 .section1_content .group_chat .buttons .button1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 35%;
+  width: 25%;
+  background-color: rgb(30, 167, 201);
+  padding-top: 0.9rem;
+  color: rgb(255, 255, 255);
+  border-radius: 1.5rem;
+}
+main .section1 .section1_content .group_chat .buttons .button2 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 35%;
+  width: 20%;
+  background-color: rgb(145, 49, 145);
+  padding-top: 0.9rem;
+  color: white;
+  border-radius: 1.5rem;
+}
+main .section1 .pointer1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 35%;
+  width: 100%;
+  margin-top: 10rem;
+  align-items: center;
+  row-gap: -1rem;
+}
+main .section1 .pointer1 .line {
+  width: 0.12rem;
+  height: 7rem;
+  background-color: rgba(110, 110, 110, 0.349);
+  margin-top: 1rem;
+}
+main .section1 .pointer1 .circle1 {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #a0a0a0;
+  font-weight: bold;
+}
+main .section2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 63.5rem;
+  width: 100%;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+main .section2 .images {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 35%;
+  width: 100%;
+  margin-top: 3.2rem;
+  gap: 2rem;
+}
+main .section2 .images img {
+  width: 18%;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 1rem;
+}
+main .section2 .description {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 30rem;
+  width: 45rem;
+  background-color: #ffffff;
+}
+main .section2 .description .main_text_2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  gap: 3rem;
+}
+main .section2 .description .main_text_2 .niebieski {
+  text-transform: uppercase;
+  color: rgb(65, 187, 187);
+  font-size: 1.5rem;
+}
+main .section2 .description .main_text_2 h2 {
+  font-size: 4.5rem;
+  margin-top: -1rem;
+  padding-inline: 1rem;
+  line-height: 4rem;
+}
+main .section2 .description .main_text_2 p {
+  font-size: 1.3rem;
+  padding-inline: 1rem;
+}
+main .section2 .pointer2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 35%;
+  width: 100%;
+  align-items: center;
+  row-gap: -1rem;
+}
+main .section2 .pointer2 .line {
+  width: 0.12rem;
+  height: 7rem;
+  background-color: rgba(110, 110, 110, 0.349);
+  margin-top: 1rem;
+}
+main .section2 .pointer2 .circle1 {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #a0a0a0;
+  font-weight: bold;
+}
+main .footer1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 20rem;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}/*# sourceMappingURL=style.css.map */
