@@ -1,4 +1,4 @@
-@mixin fFlexbox($direction, $height, $width){
+@mixin fFlexbox($direction, $height, $width) {
   display: flex;
   flex-direction: $direction;
   text-align: center;
@@ -6,7 +6,6 @@
   height: $height;
   width: $width;
 }
-
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -17,8 +16,6 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  //background-color: rgb(120, 113, 113);
-  //width: fit-content;
   height: fit-content;
 }
 img, picture, video, canvas, svg {
@@ -33,166 +30,180 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 main {
-  height: 137rem; 
+  height: 137rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  .section1{
-      @include fFlexbox(column, 63.5rem, 100%);
+  .section1 {
+    @include fFlexbox(column, 63.5rem, 100%);
 
-      .logo{
-          @include fFlexbox(row, 25%,  100%);
-          .logo_holder{
-            margin-top: 5rem; 
-          }
-        }
-      .section1_content{
-          @include fFlexbox(row, 40%,  100%);       
-          .pictures{
-            @include fFlexbox(row, 100%, 100%);
-            column-gap: 40vw;
-            .img1{
-                @include fFlexbox(row, max-content, 25%);
-            }
+    .logo {
+      @include fFlexbox(row, 25%, 100%);
+      .logo_holder {
+        margin-top: 5rem;
+      }
+    }
 
-            .img2{
-                @include fFlexbox(row, max-content, 25%);
-                margin-top: 5rem;
-            }
-          }
-          .group_chat{
-            @include fFlexbox(column, max-content, 39%);
-            position: absolute;
-            gap: 4rem;
-            margin-top: 3rem;
-            .main_text{
-              @include fFlexbox(column, 70%, 100%);
-              h1{
-                font-size: 3vw;
-                margin-top: -1rem;
-                padding-inline: 6rem;
-                line-height: 4rem;
-              }
-              p{
-                margin-top: 3rem;
-                font-size: 1vw;
-                padding-inline: 3.5rem;
-              }
-            }
-            .buttons{
-              @include fFlexbox(row, 35%, 100%);
-              gap: 2rem;
-              .button1{
-                @include fFlexbox(row, 3.1rem, 25%);
-                background-color: rgb(30, 167, 201);
-                padding-top: 0.9rem;
-                color: rgb(255, 255, 255);
-                border-radius: 1.5rem;
-              }
-              .button2{
-                @include fFlexbox(row, 3.1rem, 20%);
-                background-color: rgb(145, 49, 145);
-                padding-top: 0.9rem;
-                color: white;
-                border-radius: 1.5rem;
-              }
-            }
+    .section1_content {
+      @include fFlexbox(row, 40%, 100%);
+      .pictures {
+        @include fFlexbox(row, 100%, 100%);
+        column-gap: 35rem; 
+
+        .img1 {
+          @include fFlexbox(row, max-content, 25%);
+        }
+
+        .img2 {
+          @include fFlexbox(row, max-content, 25%);
+          margin-top: 5rem;
         }
       }
-      .pointer1{
-          @include fFlexbox(column, 35%,  100%);
-          margin-top: 10rem;
-          align-items: center;
-          row-gap: -1rem;
-          .line{
-            width: 0.12rem;
-            height: 7rem;
-            background-color: rgba(110, 110, 110, 0.349);
-            margin-top: 1rem;
-          }
-          .circle1{
-            width: 3.5rem; 
-            height: 3.5rem;
-            border-radius: 50%;
-            background-color: #ffffff; 
-            border: 1px solid #d3d3d3; 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem; 
-            color: #a0a0a0; 
-            font-weight: bold;
-          }
-      }
-  }
-  .section2{
-      @include fFlexbox(column, 63.5rem, 100%);
-      align-items: center;
-      background-color: rgb(255, 255, 255);
-      .images{
-        @include fFlexbox(row, 35%, 100%);
-        margin-top: 3.2rem;
-        gap: 2rem;
-        img{
-          width: 18%;
-          height: max-content;
-          border-radius: 1rem;
-        }
-      }
-      .description{
-        @include fFlexbox(row, 30rem, 45rem);
-        background-color: #ffffff;
-        .main_text_2{
-          @include fFlexbox(column, 100%, 100%);
-          gap: 3rem;
-          .niebieski{
-            text-transform: uppercase;
-            color: rgb(65, 187, 187);
-            font-size: 1.5rem;
-          }
-          h2{
-            font-size: 4.5rem;
+      .group_chat {
+        @include fFlexbox(column, max-content, 39%);
+        position: absolute;
+        gap: 4rem;
+        margin-top: 3rem;
+
+        .main_text {
+          @include fFlexbox(column, 70%, 100%);
+          h1 {
+            font-size: 4rem; 
             margin-top: -1rem;
-            padding-inline: 1rem;
+            padding-inline: 6rem;
             line-height: 4rem;
           }
-          p{
-            font-size: 1.3rem;
-            padding-inline: 1rem;
+          p {
+            margin-top: 3rem;
+            font-size: 1.6rem; 
+            padding-inline: 3.5rem;
           }
+        }
+        .buttons {
+          @include fFlexbox(row, 35%, 100%);
+          gap: 2rem;
 
+          .button1 {
+            @include fFlexbox(row, 3.1rem, 25%);
+            background-color: rgb(30, 167, 201);
+            padding-top: 0.9rem;
+            color: rgb(255, 255, 255);
+            border-radius: 1.5rem;
+          }
+          .button2 {
+            @include fFlexbox(row, 3.1rem, 20%);
+            background-color: rgb(145, 49, 145);
+            padding-top: 0.9rem;
+            color: white;
+            border-radius: 1.5rem;
+          }
         }
       }
-      .pointer2{
-        @include fFlexbox(column, 35%,  100%);
+    }
+
+    .pointer1 {
+      @include fFlexbox(column, 35%, 100%);
+      margin-top: 10rem;
+      align-items: center;
+      row-gap: -1rem;
+
+      .line {
+        width: 0.12rem;
+        height: 7rem;
+        background-color: rgba(110, 110, 110, 0.349);
+        margin-top: 1rem;
+      }
+      .circle1 {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        background-color: #ffffff;
+        border: 1px solid #d3d3d3;
+        display: flex;
         align-items: center;
-        row-gap: -1rem;
-        .line{
-          width: 0.12rem;
-          height: 7rem;
-          background-color: rgba(110, 110, 110, 0.349);
-          margin-top: 1rem;
-        }
-        .circle1{
-          width: 3.5rem; 
-          height: 3.5rem;
-          border-radius: 50%;
-          background-color: #ffffff; 
-          border: 1px solid #d3d3d3; 
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 1.2rem; 
-          color: #a0a0a0; 
-          font-weight: bold;
-        }
+        justify-content: center;
+        font-size: 1.2rem;
+        color: #a0a0a0;
+        font-weight: bold;
+      }
     }
   }
-  .footer1{
-      @include fFlexbox(row, 20rem, 100%);
-      background-color: rgb(0, 0, 0);
+
+  .section2 {
+    @include fFlexbox(column, 63.5rem, 100%);
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+
+    .images {
+      @include fFlexbox(row, 35%, 100%);
+      margin-top: 3.2rem;
+      gap: 2rem;
+      img {
+        width: 18%;
+        height: max-content;
+        border-radius: 1rem;
+      }
+    }
+
+    .description {
+      @include fFlexbox(row, 30rem, 45rem);
+      background-color: #ffffff;
+
+      .main_text_2 {
+        @include fFlexbox(column, 100%, 100%);
+        gap: 3rem;
+
+        .niebieski {
+          text-transform: uppercase;
+          color: rgb(65, 187, 187);
+          font-size: 1.5rem;
+        }
+
+        h2 {
+          font-size: 4.5rem;
+          margin-top: -1rem;
+          padding-inline: 1rem;
+          line-height: 4rem;
+        }
+        p {
+          font-size: 1.3rem;
+          padding-inline: 1rem;
+        }
+      }
+    }
+
+    .pointer2 {
+      @include fFlexbox(column, 35%, 100%);
+      align-items: center;
+      row-gap: -1rem;
+
+      .line {
+        width: 0.12rem;
+        height: 7rem;
+        background-color: rgba(110, 110, 110, 0.349);
+        margin-top: 1rem;
+      }
+      .circle1 {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        background-color: #ffffff;
+        border: 1px solid #d3d3d3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        color: #a0a0a0;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .footer1 {
+    @include fFlexbox(row, 20rem, 100%);
+    background-color: rgb(0, 0, 0);
   }
 }
