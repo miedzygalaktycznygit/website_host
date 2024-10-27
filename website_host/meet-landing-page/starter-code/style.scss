@@ -55,43 +55,45 @@ main {
             @include fFlexbox(row, 100%, 100%);
             column-gap: 40vw;
             .img1{
-                @include fFlexbox(row, 25rem, 30rem);
+                @include fFlexbox(row, max-content, 25%);
             }
 
             .img2{
-                @include fFlexbox(row, 25rem, 30rem);
+                @include fFlexbox(row, max-content, 25%);
                 margin-top: 5rem;
             }
           }
           .group_chat{
-            @include fFlexbox(column, 30rem, 39rem);
+            @include fFlexbox(column, max-content, 39%);
             position: absolute;
+            gap: 4rem;
+            margin-top: 3rem;
             .main_text{
               @include fFlexbox(column, 70%, 100%);
               h1{
-                font-size: 4.5rem;
+                font-size: 3vw;
                 margin-top: -1rem;
                 padding-inline: 6rem;
                 line-height: 4rem;
               }
               p{
                 margin-top: 3rem;
-                font-size: 1.2rem;
+                font-size: 1vw;
                 padding-inline: 3.5rem;
               }
             }
             .buttons{
-              @include fFlexbox(row, 30%, 100%);
+              @include fFlexbox(row, 35%, 100%);
               gap: 2rem;
               .button1{
-                @include fFlexbox(row, 35%, 25%);
+                @include fFlexbox(row, 3.1rem, 25%);
                 background-color: rgb(30, 167, 201);
                 padding-top: 0.9rem;
                 color: rgb(255, 255, 255);
                 border-radius: 1.5rem;
               }
               .button2{
-                @include fFlexbox(row, 35%, 20%);
+                @include fFlexbox(row, 3.1rem, 20%);
                 background-color: rgb(145, 49, 145);
                 padding-top: 0.9rem;
                 color: white;
