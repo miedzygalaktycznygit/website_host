@@ -1,3 +1,4 @@
+
 @mixin fFlexbox($direction, $height, $width) {
   display: flex;
   flex-direction: $direction;
@@ -56,7 +57,11 @@ main {
         .img1 {
           @include fFlexbox(row, max-content, 25%);
         }
-
+        .img3{
+          visibility: hidden;
+          position: absolute;
+          z-index: -1;
+        }
         .img2 {
           @include fFlexbox(row, max-content, 25%);
           margin-top: 5rem;
@@ -205,10 +210,13 @@ main {
   .footer1 {
     @include fFlexbox(row, 20rem, 100%);
     background-color: rgba(111, 169, 185, 0.692);
-    img{
+    .img5{
       z-index: -1;
       width: 100vw;
       min-height: 20rem;
+    }
+    .img4{
+      display: none;
     }
     .footer_content{
       @include fFlexbox(row, 20rem, 100%);
@@ -243,6 +251,92 @@ main {
           padding-top: 0.9rem;
           color: rgb(255, 255, 255);
           border-radius: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 81.25rem){
+  main{   
+    height: 155rem;
+    .section1{
+      @include fFlexbox(column, 87.5rem, 100%);
+      .logo{
+        margin-bottom: 2rem;
+      }
+      .section1_content{
+        @include fFlexbox(row, 60%, 100%);
+        .pictures{
+          @include fFlexbox(row, 100%, 100%);
+          column-gap: 0rem;
+          .img3{
+            visibility: visible;
+            position: absolute;
+            z-index: 10;
+          }
+          .img1{
+            visibility: hidden;
+            position: absolute;
+            z-index: -1;
+          }
+          .img2{
+            visibility: hidden;
+            position: absolute;
+            z-index: -1;  
+          }
+        }
+        .group_chat{
+          @include fFlexbox(column, max-content, 40%);
+          margin-top: 20rem;
+        }
+      }
+      .pointer1{
+        margin-top: 30rem;
+      }
+    }
+    .footer1{
+      @include fFlexbox(row, 25rem, 100%);
+      .img4{
+        z-index: -1;
+        width: 100vw;
+        min-height: 25rem;
+        display: block;
+      }
+      .img5{
+        display: none;
+      }
+      .footer_content{
+        @include fFlexbox(column, 20rem, 100%);
+        row-gap: 3rem;
+        align-items: center;
+        .first_tetx{
+          @include fFlexbox(row, 10rem, 35%);
+          margin-top: -4rem;
+          h2{
+            margin-top: 0rem;
+            padding-inline: 0rem;
+          }
+        }
+        .second_text{
+          @include fFlexbox(row, 10%, 35%);
+
+          min-height: 3rem;
+          p{
+            padding-inline: 0rem;
+            font-size: 1.2rem;
+          }
+        }
+        .button3{
+          @include fFlexbox(row, 10%, 30%);
+          margin-top: 1rem;
+          .surface{
+            @include fFlexbox(row, 3.1rem, 9rem);
+            background-color: rgb(133, 95, 180);
+            padding-top: 0.9rem;
+            color: rgb(255, 255, 255);
+            border-radius: 1.5rem;
+          }
         }
       }
     }
